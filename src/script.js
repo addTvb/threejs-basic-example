@@ -12,16 +12,16 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.set(0, 0, 3)
 // Create Cube
 const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshPhongMaterial({ color: 0xfafafa });
+const material = new THREE.MeshPhongMaterial({ color: 0x7932a8 });
 const cube = new THREE.Mesh(geometry, material);
 
 scene.add(cube);
 // Lights
 {
     const color = 0xFFFFFF;
-    const intensity = .3;
+    const intensity = .7;
     const light = new THREE.DirectionalLight(color, intensity);
-    light.position.set(-1, 2, 4);
+    light.position.set(-5, 7, 10);
     scene.add(light);
 }
 // Render cube
